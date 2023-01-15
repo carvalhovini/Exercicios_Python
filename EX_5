@@ -1,0 +1,26 @@
+class Funcionario:
+    def __init__(self, nome, cargo, salario):
+        self.nome = nome
+        self.cargo = cargo
+        self.salario = salario
+        self.horas_extra = 0
+        self.bonus = 0
+
+    def registrar_horas_extra(self, horas, valor_hora):
+        self.horas_extra += horas
+        self.salario += horas * valor_hora
+
+    def aumentar_salario(self, valor):
+        self.salario += valor
+
+    def exibir_informacoes(self):
+        print(f"Nome: {self.nome}")
+        print(f"Cargo: {self.cargo}")
+        print(f"Salário: {self.salario}")
+        print(f"Horas extras trabalhadas: {self.horas_extra}")
+        print(f"Valor do bônus: {self.bonus}")
+
+funcionario = Funcionario("João Silva", "Gerente", 5000)
+funcionario.registrar_horas_extra(10, 50)
+funcionario.aumentar_salario(1000)
+funcionario.exibir_informacoes()
