@@ -1,0 +1,34 @@
+class Carro:
+    def __init__(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+        self.is_ligado = False
+
+    def ligar(self):
+        self.is_ligado = True
+        print("Carro ligado.")
+
+    def desligar(self):
+        self.is_ligado = False
+        print("Carro desligado.")
+
+    def acelerar(self):
+        if self.is_ligado:
+            print("Acelerando...")
+        else:
+            print("Carro desligado.")
+
+    def frear(self):
+        if self.is_ligado:
+            print("Freando...")
+        else:
+            print("Carro desligado.")
+
+carro = Carro("Fiat", "Uno", 2020)
+carro.ligar()
+carro.acelerar()
+carro.frear()
+carro.desligar()
+carro.acelerar()
+carro.frear()
