@@ -1,0 +1,19 @@
+//Crie uma classe chamada "Pessoa" que tenha os atributos "nome", "idade" e "endereco" e os métodos "cumprimentar" e "envelhecer".
+//Crie uma instância dessa classe e chame os métodos.
+
+class Pessoa:
+    def __init__(self, nome, idade, endereco):
+        self.nome = nome
+        self.idade = idade
+        self.endereco = endereco
+
+    def cumprimentar(self):
+        print(f"Olá, meu nome é {self.nome}.")
+
+    def envelhecer(self):
+        self.idade += 1
+        print(f"Eu agora tenho {self.idade} anos.")
+
+p = Pessoa("João", 30, "Rua A, 123")
+p.cumprimentar()
+p.envelhecer()
