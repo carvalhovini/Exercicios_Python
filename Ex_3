@@ -1,0 +1,24 @@
+//Crie uma classe chamada "Veículo" que tenha os atributos "marca", "modelo" e "ano" e os métodos "ligar" e "desligar"
+//Crie uma instância dessa classe e imprima os valores dos atributos.
+
+class Veiculo:
+    def __init__(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+        self.is_on = False
+
+    def ligar(self):
+        self.is_on = True
+        print("Veículo ligado.")
+
+    def desligar(self):
+        self.is_on = False
+        print("Veículo desligado.")
+
+car = Veiculo("Toyota", "Corolla", 2020)
+print(car.marca)
+print(car.modelo)
+print(car.ano)
+car.ligar()
+car.desligar()
