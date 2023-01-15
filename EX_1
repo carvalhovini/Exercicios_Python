@@ -1,0 +1,18 @@
+//Escreva um programa que calcule a soma de todos os números primos entre 1 e 100.
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def main():
+    prime_sum = 0
+    for i in range(1, 101):
+        if is_prime(i):
+            prime_sum += i
+    print(prime_sum)
+
+main()
