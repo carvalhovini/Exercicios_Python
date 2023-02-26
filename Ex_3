@@ -1,5 +1,5 @@
 //Crie uma classe chamada "Veículo" que tenha os atributos "marca", "modelo" e "ano" e os métodos "ligar" e "desligar"
-//Crie uma instância dessa classe e imprima os valores dos atributos.
+//Crie uma instância dessa classe e imprima os valores dos atributos
 
 class Veiculo:
     def __init__(self, marca, modelo, ano):
