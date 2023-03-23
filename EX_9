@@ -1,4 +1,4 @@
-def square(x):
+def square(x):x
     return x**2
 
 numbers = [1, 2, 3, 4, 5]
