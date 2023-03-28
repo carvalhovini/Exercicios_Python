@@ -1,4 +1,4 @@
-//Crie uma classe chamada "Pessoa" que tenha os atributos "nome", "idade" e "endereco" e os métodos "cumprimentar" e "envelhecer".
+//Crie uma classe chamada "Pessoa" que tenha os atributos "nome", "idade" e "endereco" e os métodos "cumprimentar" e "envelhecer"
 //Crie uma instância dessa classe e chame os métodos.
 
 class Pessoa:
